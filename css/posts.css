@@ -1,0 +1,14 @@
+.posts_title .fa-cog {
+    font-size: 2.3rem;
+}
+.Blaco {
+    background-color: #000 !important;
+    color: #fff;
+}
+.List_text div {
+    display: flex;
+    align-items: center;
+}
+.List_text p {
+    margin: 0;
+}
