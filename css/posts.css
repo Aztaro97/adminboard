@@ -14,21 +14,21 @@
 }
 @media only screen and (max-width:992px) {
     th {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     td, td .btn {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .navigation_right {
         display:none;
     }
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:365px) {
     th {
-        font-size: .6rem;
+        font-size: .8rem;
     }
     td, td .btn {
-        font-size: .4rem;
+        font-size: .7rem;
     }
 }
