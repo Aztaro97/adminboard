@@ -12,3 +12,23 @@
 .List_text p {
     margin: 0;
 }
+@media only screen and (max-width:992px) {
+    th {
+        font-size: .8rem;
+    }
+    td, td .btn {
+        font-size: .8rem;
+    }
+    .navigation_right {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    th {
+        font-size: .6rem;
+    }
+    td, td .btn {
+        font-size: .4rem;
+    }
+}

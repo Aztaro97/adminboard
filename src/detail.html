@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../summernote-master/dist/summernote.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../font/css/all.min.css">
     <link rel="stylesheet" href="../css/detail.css">
@@ -14,7 +15,7 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container font-weight-bold">
                 <a href="../index.html" class="navbar-brand">AdminBoard</a>
-                <button class="navbar-toggler mr-md-auto mr-sm-auto" data-toggle="collapse" data-target="#NavbarContente">
+                <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#NavbarContente">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="NavbarContente">
@@ -103,14 +104,14 @@
                         </div>
                         <div class="form-group">
                             <label for="" class="form-check-label">Image Upload</label>
-                            <input type="file" class="">Chose file</input>
+                            <input type="file" class="form-control-file">Chose file</input>
                             <p class="text-muted">Max size 3mb</p>
                         </div>
                         <div class="form-group">
                             <Label for="">Body</Label>
-                            <form method="post">
-                                <textarea id="summernote" name="editordata"></textarea>
-                              </form>
+                            <form>
+                                <textarea id="editor" name="editordata"></textarea>
+                            </form>
                             
                         </div>
                         
@@ -129,7 +130,7 @@
 
 
     <script>
-    $('#summernote').summernote({
+    $('#editor').summernote({
         placeholder: 'Hello Bootstrap 4',
         tabsize: 2,
         height: 100
@@ -147,7 +148,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
     <!--===========    Summernote file Js  ============-->
-    <script src="../summernote-master/dist/summernote-bs4.min.js"></script>
+    <script src="../summernote-master/dist/summernote.min.js"></script>
 
 
     

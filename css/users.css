@@ -1,14 +1,26 @@
 .users_title .fa-cog {
     font-size: 2.3rem;
 }
-.Blaco {
-    background-color: #000 !important;
-    color: #fff;
+@media only screen and (max-width:992px) {
+    
+    .navigation_right {
+        display:none;
+    }
+    th {
+        font-size: .8rem;
+    }
+    td, td .btn {
+        font-size: .8rem;
+    }
 }
-.List_text div {
-    display: flex;
-    align-items: center;
-}
-.List_text p {
-    margin: 0;
+@media only screen and (max-width:380px) {
+    th {
+        font-size: .6rem;
+    }
+    td, td .btn {
+        font-size: .6rem;
+    }
+    .pagination {
+        font-size: .6rem;
+    }
 }
