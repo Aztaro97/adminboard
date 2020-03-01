@@ -109,9 +109,7 @@
                         </div>
                         <div class="form-group">
                             <Label for="">Body</Label>
-                            <form>
-                                <textarea id="editor" name="editordata"></textarea>
-                            </form>
+                                <textarea name="" id="editor" cols="30" rows="10"></textarea>
                             
                         </div>
                         
@@ -144,11 +142,13 @@
 
     <!-----===========  Bootstrap file Js =========-->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../ckeditor/ckeditor.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-    <!--===========    Summernote file Js  ============-->
-    <script src="../summernote-master/dist/summernote.min.js"></script>
+    <script>
+        ///   CK Editor Script   ///
+        CKEDITOR.replace('editor');
+    </script>
 
 
     

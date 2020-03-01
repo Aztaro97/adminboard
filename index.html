@@ -53,6 +53,8 @@
             </nav>
     </header>
 
+
+    <!---=========================   CONTAINER   ==============-->
     <main>
         <section class="dashboard_title bg-primary">
             <div class="container py-lg-3 py-3 text-white">
@@ -65,8 +67,52 @@
                 <div class="col-lg-8 col-md-12 col-sm-12">
                     <div class="row font-weight-bold">
                         <div class="col-lg-4 col-md-12 col-sm-12 ">
-                            <button type="button" class="btn btn-primary w-100"> <i class="fas fa-plus"></i> Ajouter un poste</button>
+                            <button type="button" class="btn btn-primary w-100" data-toggle="modal" data-target="#Addposte"> <i class="fas fa-plus"></i> Ajouter un poste</button>
+                            <div class="modal fade" id="Addposte" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-primary">
+                                            <h5 class="modal-title font-weight-bold text-white">Ajouter categories</h5>
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label for="title" class="form-check-label">Title</label>
+                                                <input name="title" class="form-control" type="text" value="Post One">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="categ" class="form-check-label">Categories</label>
+                                                <select name="categ" id="categ" class="custom-select">
+                                                    <option value="1">Web development</option>
+                                                    <option value="2">Tech Gadgets</option>
+                                                    <option value="3">Bussiness</option>
+                                                    <option value="4">Health & Wellness</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="form-check-label">Image Upload</label>
+                                                <input type="file" class="form-control-file">Chose file</input>
+                                                <p class="text-muted">Max size 3mb</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <Label for="">Body</Label>
+                                                <form>
+                                                    <textarea name="" id="editor" cols="30" rows="10"></textarea>
+                                                </form>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <button type="button" class="btn btn-success w-100" data-toggle="modal" data-target="#AddCategories"><i class="fas fa-plus"></i> Ajouter une categories</button>
                             <div class="modal fade" id="AddCategories" role="dialog">
@@ -264,5 +310,10 @@
 
     <!-----===========  Bootstrap file Js =========-->
     <script src="js/bootstrap.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>
+        ///   CK Editor Script   ///
+        CKEDITOR.replace('editor');
+    </script>
 </body>
 </html>

@@ -111,7 +111,27 @@
         <section class="contente">
             <div class="container py-lg-4 py-3">
                 <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12"></div>
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title"><h5 class="font-weight-bold">Edit profil</h5></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" value="Housei Habil">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" value="housein@gmail.com"">
+                                  </div>
+                                  <div class="form-group">
+                                    <Label for="">Body</Label>
+                                        <textarea name="" id="editor" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-3 col-md-12 col-sm-12 ">
                         <h4 class="font-weight-bold">Your Avatar</h4>
                         <img src="../images/avatar.jpg" class="img-fluid" alt="">
@@ -138,6 +158,11 @@
 
     <!---================  Bootstrap File JS   ===============-->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script>
+        ///   CK Editor Script   ///
+        CKEDITOR.replace('editor');
+    </script>
 
 </body>
 </html>
